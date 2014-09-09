@@ -1,8 +1,3 @@
-$background: #151515;
-$primary-color: #eaeaea;
-$link: #63c0f5;
-$highlight: #b5e853;
-
 /**
  * Reset some basic elements
  */
@@ -23,8 +18,8 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $primary-color;
-    background: $background url("/images/bkg.png") 0 0;
+    color: $text-color;
+    background: $background-color url("/images/bkg.png") 0 0;
 }
 
 
@@ -113,8 +108,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $green-color;
+    border-left: 4px solid $green-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -132,7 +127,7 @@ blockquote {
  */
 pre,
 code {
-    color: $primary-color;
+    color: $text-color;
     font-size: 12px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 3px;
@@ -204,7 +199,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $green-color;
         }
     }
 }
