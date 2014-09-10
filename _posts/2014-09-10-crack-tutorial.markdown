@@ -5,7 +5,7 @@ date:   2014-09-10 14:10:17
 tags:   tutorial crack software
 ---
 To start you're going to need OllyDbg, you can obtain it from
-[http://home.t-online.de/home/Ollydbg/](http://home.t-online.de/home/Ollydbg/)
+[http://www.ollydbg.de/](http://www.ollydbg.de/)
 
 After grabbing Olly and unzipping the archive, copy this ollydbg.ini
 [insert link to my ollydbg.ini] into the Olly directory.
