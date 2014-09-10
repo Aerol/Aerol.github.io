@@ -24,19 +24,3 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-<div class="sidebar">
-  <div class="posts">
-    <ul>
-      {% for post in site.posts %}
-      <li>{{ post.title }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="tags">
-    <ul>
-      {% for tag in site.tags %}
-      <li>{{ tag[0] }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>

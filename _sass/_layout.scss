@@ -32,7 +32,7 @@
 }
 
 .site-nav {
-    float: right;
+    //float: right;
     line-height: 35px;
 
     .menu-icon {
@@ -99,21 +99,23 @@
  * Main content stuff
  */
 
-.home {
+.home, .post {
   float: left;
   padding: 5px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 3px;
-  width: 72%;
+  width: 78%;
   background: $background-color;
 }
 
 .sidebar {
   float: right;
-  width: 25%;
+  width: 20%;
 
-  > .posts, .tags {
+  > .navigation, .posts, .tags {
+    text-align: right;
     margin-bottom: 7px;
+    padding-right: 10px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 3px;
     background-color: $background-color;
