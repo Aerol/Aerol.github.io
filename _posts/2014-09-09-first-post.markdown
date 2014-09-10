@@ -2,7 +2,7 @@
 layout: post
 title:  "First post"
 date:   2014-09-09 11:30:40
-categories: jekyll post
+tags: jekyll post
 ---
 First test blog post, will be updated when everything is working all legit like
 

@@ -34,7 +34,9 @@ layout: default
   </div>
   <div class="tags">
     <ul>
-      <li>tag</li>
+      {% for tag in site.tags %}
+      <li>{{ tag[0] }}</li>
+      {% endfor %}
     </ul>
   </div>
 </div>
