@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 
@@ -32,6 +33,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+    margin-top: $spacing-unit / 2;
 }
 
 
@@ -194,9 +196,9 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        //vertical-align: middle;
 
         path {
             fill: $green-color;
