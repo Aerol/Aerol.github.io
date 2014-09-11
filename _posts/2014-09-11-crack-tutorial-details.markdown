@@ -28,4 +28,14 @@ CALL iisc.004078c4
 JNZ SHORT iisc.005a6493
 {% endhighlight %}
 
-For all I know there could have been another check shortly after the error/success call and I would have to step forward to find it by hand, though there's probably ways to find it without doing it by hand, but I'm no professional or master at this, just a tinkerer. And yes, I did put the syntax highlight in just to see if pygments could handle assembly and it can! :D
+For all I know there could have been another check shortly after the error/success call and I would have to step forward to find it by hand, though there's probably ways to find it without doing it by hand, but I'm no professional or master at this, just a tinkerer. And yes, I did put the syntax highlight in just to see if pygments could handle assembly and it can, to a certain extent :D
+
+Continuing on, why did I even add 3 breakpoints? Just because; I knew the last breakpoint was the one I wanted right from the start, I just wanted people to have something to do. xD
+
+I knew this because of the call function right before the jnz and an assumption and my assumption was correct. So why did a I fill the jnz with nops instead of rewriting it to a je? I could have and it would have worked the same, I honestly don't know why I chose nops at this point. Honestly I wrote anddid all of this 3 years ago, so saying "I was thinking exactly this" would be silly, because I was most likely baked off my ass at the time.
+
+The idea is though, bypass the check. If it's checking for a zero and jumping to the wrong place, give it a 1 instead.
+
+Moving on OllyDump now, why did I choose the options I did? Because of the way the binary was made in the first place. It was a dynamic build exe, meaning it loaded dlls int at load time, so I didn't want JMP and Calls in memory to the DLL function stuff; and I don't want the import table to be rebuilt, it's fine the way it is, we didn't mess with it and we don't want it getting fucked. The whole import table I referred to is the Import Address Table and Import Name Table in the PE/COFF spec. (that's the windows executable format) An entire post could be done on that alone, so I won't go into further detail right now, but I suggest anyone reading this to read up on the PE/COFF format and read up on x86 assembly, you don't have to master it, but get to know it.
+
+That pretty much sums it all up, I didn't go into major detail, but I hope you learned a tiny bit of something.
