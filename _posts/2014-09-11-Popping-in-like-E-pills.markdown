@@ -13,7 +13,7 @@ lame but hey, be nice to me it's my first post!
 {
 "IDEA": {
 	"ID" : "brainstorm-entry",
-	"DERIVATE" : "brainstorm-entry-id-of-root"
+	"DERIVATE" : "brainstorm-entry-id-of-root",
         "USER" : "username-proposing-entry",
 	"DESCRIPTION" : "small-description",
 	"FEATURES": {
