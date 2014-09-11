@@ -14,8 +14,8 @@ lame but hey be nice to me it's my first post!
     "IDEA": {
 		"ID" : "brainstorm-entry",
 		"DERIVATE" : "brainstorm-entry-id-of-root"
-        	"USER": "username",
-		"DESCRIPTION": "small-description",
+        	"USER" : "username",
+		"DESCRIPTION" : "small-description",
 		"FEATURES": {
             		"A": "aaaa",
 			"B": "bbbb",
@@ -30,7 +30,7 @@ lame but hey be nice to me it's my first post!
 		},
 
 		"COMMENTS": {
-			"user": "comment",
+			"user" : "comment",
 		}
 }
 {% endhighlight %}
