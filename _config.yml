@@ -4,9 +4,7 @@ email: rectifier04@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Thoughts, rants and data smorgasbord from a Mad Scientest.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://aerol.github.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-github_username:  Aerol
+url: "http://puppetmaster.root.sx" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
