@@ -20,15 +20,16 @@
     &:before {
       content: "master ~/";
     }
-    &:after {
-      content: ">_";
-    }
     &,
     &:visited,
     &:hover {
         color: $green-color;
         text-decoration: none;
     }
+}
+
+.navigation {
+  padding-bottom: 5px;
 }
 
 .site-nav {
@@ -196,7 +197,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding-bottom: $spacing-unit
 }
 
 .page-heading {
