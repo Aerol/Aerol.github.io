@@ -39,8 +39,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
 <script>setInterval(function() {
-$(".cursor").animate({opacity:0},600,"linear",function(){
-  $(this).animate({opacity:1},600);
+$(".cursor").animate({opacity:1},500,"linear",function(){
+  $(this).delay(500).animate({opacity:0},500);
 })}, 1000);</script>
 
   </body>
