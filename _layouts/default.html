@@ -10,28 +10,25 @@
     <div class="page-content">
       <div class="wrapper">
           <div class="navigation">
-            <nav class="site-nav">
-              <div class="trigger">
-                <ul class="nav nav-pills">
-                  {% for page in site.pages %}
-                  {% if page.title %}
-                  <li>
-                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    {% endif %}
+            <div class="trigger">
+              <ul class="nav nav-pills">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    {% for post in site.posts %}
+                    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                     {% endfor %}
-              </div>
-            </nav>
+                  </ul>
+                </li>
+                {% for page in site.pages %}
+                {% if page.title %}
+                <li>
+                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                  {% endif %}
+                  {% endfor %}
+            </div>
           </div>
-        {{ content }}
-        <div class="sidebar">
-          <div class="posts">
-            <ul class="nav nav-pills nav-stacked">
-              {% for post in site.posts %}
-              <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
+          {{ content }}
       </div>
     </div>
 
