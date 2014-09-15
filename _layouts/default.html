@@ -25,7 +25,7 @@
         {{ content }}
         <div class="sidebar">
           <div class="posts">
-            <ul>
+            <ul class="nav nav-pills nav-stacked">
               {% for post in site.posts %}
               <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
               {% endfor %}
